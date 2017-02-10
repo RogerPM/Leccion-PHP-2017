@@ -1,7 +1,4 @@
 <?php
-
-
-
 class dataBase
 {
   public $isConnected;
@@ -58,14 +55,6 @@ class dataBase
       }catch(PDOException $e){
       throw new Exception($e->getMessage());
     }           
-  }
-
-  public function updateRow($query, $params){
-    return $this->insertRow($query, $params);
-  }
-
-  public function deleteRow($query, $params){
-    return $this->insertRow($query, $params);
   }
 }
 

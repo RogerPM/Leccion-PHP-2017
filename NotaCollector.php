@@ -3,7 +3,7 @@
 include_once('Nota.php');
 include_once('Collector.php');
 
-class DemoCollector extends Collector
+class NotaCollector extends Collector
 {
   
   function showDemos() {
@@ -23,7 +23,7 @@ class DemoCollector extends Collector
            
  }
 
- function insertarDemo($n,$p,$f,$m,$a) 
+ function insertarNota($n,$p,$f,$m,$a) 
  {
     $rows = self::$db->insertRow("insert into nota (nombre, parcial, final, mejoramiento, aprobar) values ($n,$p,$f,$m,$a)",null);        
            

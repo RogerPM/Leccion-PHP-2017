@@ -15,9 +15,9 @@ $a = 1;
 ?>
 
 <?php
-include_once("DemoCollector.php");
-$DemoCollectorObj = new DemoCollector();
-$DemoCollectorObj->insertarDemo($n,$p,$f,$m,$a);
+include_once("NotaCollector.php");
+$NotaCollectorObj = new NotaCollector();
+$NotaCollectorObj->insertarNota($n,$p,$f,$m,$a);
 echo "&nbsp;";  
 echo "Registro Ingresado : ".$n. " " .$p. " ". $f. " ".$m. " ".$a;
 ?>

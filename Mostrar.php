@@ -1,12 +1,12 @@
 
 <?php
-include_once("DemoCollector.php");
+include_once("NotaCollector.php");
 
 $id =1;
 
-$DemoCollectorObj = new DemoCollector();
+$NotaCollectorObj = new NotaCollector();
 
-foreach ($DemoCollectorObj->showDemos() as $c){
+foreach ($NotaCollectorObj->showDemos() as $c){
   echo "<div>";
 
   echo $c->getId() . "  && " .$c->getNombre() . "  && " .$c->getParcial(). "  && " .$c->getNfinal(). "  && " .$c->getMejoraiento();  
